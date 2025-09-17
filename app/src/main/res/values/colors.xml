@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 60% Primary -->
+    <color name="mdp_primary">#2E7D32</color> <!-- Dark Green -->
+
+    <!-- 30% Secondary -->
+    <color name="mdp_secondary">#A5D6A7</color> <!-- Light Green -->
+
+    <!-- 10% Accent -->
+    <color name="mdp_accent">#FFB300</color> <!-- Amber -->
+
+    <!-- Surfaces / Background -->
+    <color name="mdp_background">#F5F5F5</color>
+    <color name="mdp_surface">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="mdp_onSurface">#212121</color>
+    <color name="mdp_onPrimary">#FFFFFF</color>
+    <color name="mdp_onAccent">#FFFFFF</color>
+</resources>

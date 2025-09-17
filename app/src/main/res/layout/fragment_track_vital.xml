@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#1A252F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Heart Rate Section -->
+        <LinearLayout
+            android:layout_width="376dp"
+            android:layout_height="69dp"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:id="@+id/backArrowTrack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@android:color/white"
+                android:contentDescription="@string/back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/track_vital"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="389dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/heart_rate"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resting_heart_rate"
+                    android:textColor="#A0A0A0"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/next"
+                    android:text="@string/log"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/_70_bpm"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/heart_rate_history"
+                    android:textColor="#A0A0A0"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/_70"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/last_7_days_3"
+                    android:textColor="#00CC66"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Graph Placeholder -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/todo1"
+                android:src="@drawable/new_graph"
+                tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+        </LinearLayout>
+
+        <!-- Blood Pressure Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_pressure"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/systolic_diastolic"
+                    android:textSize="16sp"
+                    android:textColor="#A0A0A0" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/next"
+                    android:text="@string/log"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_120_80_mmhg"
+                android:textSize="32sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blood_pressure_history"
+                    android:textSize="16sp"
+                    android:textColor="#A0A0A0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_120_80"
+                    android:textSize="32sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_7_days_2"
+                    android:textSize="14sp"
+                    android:textColor="#00CC66"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Graph Placeholder -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/todo1"
+                android:src="@drawable/new_graph"
+                tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+        </LinearLayout>
+
+        <!-- Glucose Levels Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/glucose_levels"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fasting_glucose"
+                    android:textColor="#A0A0A0"
+                    android:textSize="16sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log"
+                    android:background="@drawable/next"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_90_mg_dl"
+                android:textSize="32sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/glucose_levels_history"
+                    android:textSize="16sp"
+                    android:textColor="#A0A0A0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_90"
+                    android:textSize="32sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_7_days_1"
+                    android:textSize="14sp"
+                    android:textColor="#FF4444"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Graph Placeholder -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/todo1"
+                android:src="@drawable/new_graph"
+                tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
